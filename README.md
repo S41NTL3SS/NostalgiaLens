@@ -10,9 +10,10 @@ __Features__
 
   - Insightful Visuals: Provides sentiment distribution charts and keyword visualizations for easy trend analysis.
 
-(Setup Instructions)
+##Setup Instructions
 
-1. __Clone the Repository__
+###1. __Clone the Repository__
+  '''vash
    *git clone https://github.com/your-username/NostalgiaLens.git*
 
    __Navigate into the project folder__
@@ -46,6 +47,9 @@ For security, never share your API keys publicly.
   pandas, tweepy, praw, requests, google-api-python-client, textblob, wordcloud, matplotlib
 
 These dependencies can be installed via *pip install -r requirements.txt.*
+
+### Results in README
+  '''bash
 
 License
 This project is licensed under the MIT License.
