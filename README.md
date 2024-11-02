@@ -2,13 +2,13 @@ __NostalgiaLens__ is a Python tool designed to capture and analyze nostalgic tre
 
 __Features__
 
-  - Cross-Platform Analysis: Gathers nostalgic data from Twitter, Reddit, Facebook, and YouTube.
+    - Cross-Platform Analysis: Gathers nostalgic data from Twitter, Reddit, Facebook, and YouTube.
 
-  - Sentiment Analysis: Uses sentiment scores to categorize nostalgic sentiments as positive, neutral, or negative.
+    - Sentiment Analysis: Uses sentiment scores to categorize nostalgic sentiments as positive, neutral, or negative.
 
-  - Keyword Extraction & Visualization: Generates word clouds and keyword frequency lists to highlight common nostalgic topics.
+    - Keyword Extraction & Visualization: Generates word clouds and keyword frequency lists to highlight common nostalgic topics.
 
-  - Insightful Visuals: Provides sentiment distribution charts and keyword visualizations for easy trend analysis.
+    - Insightful Visuals: Provides sentiment distribution charts and keyword visualizations for easy trend analysis.
 
 
 ##Setup Instructions
@@ -50,15 +50,15 @@ For security, never share your API keys publicly.
 
 
   __Example Output__
-  Sentiment Analysis Results: Displays sentiment scores for each post, indicating the general tone of nostalgia.
+  *Sentiment Analysis Results* Displays sentiment scores for each post, indicating the general tone of nostalgia.
     
-  Keyword Cloud and Sentiment Distribution: Generates visuals to showcase common nostalgic topics and their associated         sentiments.
+  *Keyword Cloud and Sentiment Distribution* Generates visuals to showcase common nostalgic topics and their associated         sentiments.
  
 5. __Dependencies__
    
         pandas, tweepy, praw, requests, google-api-python-client, textblob, wordcloud, matplotlib
 
-These dependencies can be installed via 
+  These dependencies can be installed via 
 
     pip install -r requirements.txt.
 
