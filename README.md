@@ -1,6 +1,6 @@
-NostalgiaLens is a Python tool designed to capture and analyze nostalgic trends across generations by collecting data from social media platforms like Twitter, Reddit, Facebook, and YouTube. This tool provides insights into the themes, eras, and cultural elements that resonate with each generation, making it valuable for researchers, marketers, and content creators.
+__NostalgiaLens__ is a Python tool designed to capture and analyze nostalgic trends across generations by collecting data from social media platforms like Twitter, Reddit, Facebook, and YouTube. This tool provides insights into the themes, eras, and cultural elements that resonate with each generation, making it valuable for researchers, marketers, and content creators.
 
-#Features
+__Features__
 
   - Cross-Platform Analysis: Gathers nostalgic data from Twitter, Reddit, Facebook, and YouTube.
 
@@ -12,36 +12,37 @@ NostalgiaLens is a Python tool designed to capture and analyze nostalgic trends 
 
 (Setup Instructions)
 
-1. Clone the Repository
+1. __Clone the Repository__
    *git clone https://github.com/your-username/NostalgiaLens.git*
 
-1.2 Navigate into the project folder
+  1.2 __Navigate into the project folder__
     *cd NostalgiaLens*
 
-3. Install the required libraries by running:
+3. __Install the required libraries by running__
    *pip install -r requirements.txt*
 
-4. Setup API KEYS
-  This project requires API keys for each platform. You can store these as environment variables or add them to a .env file.
+4. __Setup API KEYS__
+  To run NostalgiaLens, you’ll need to obtain API keys for each platform. Follow these steps for each:
 
-    Twitter: TWITTER_BEARER_TOKEN
-    Reddit: REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USER_AGENT
-    Facebook: FACEBOOK_ACCESS_TOKEN, FACEBOOK_GROUP_ID
-    YouTube: YOUTUBE_API_KEY
+    __Twitter__ Set up a developer account and create a project to get your TWITTER_BEARER_TOKEN.
+    __Reddit__ Register an app to obtain REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, and REDDIT_USER_AGENT.
+    __Facebook__ Create an app in the Facebook Developer Console to get your FACEBOOK_ACCESS_TOKEN.
+    __YouTube__ Get a YOUTUBE_API_KEY from the Google Cloud Console.
+   
+Add these keys in the script where indicated, or set them as environment variables. For security, never share your API keys publicly.
 
 For security, never share your API keys publicly.
 
-4.Usage
+4.__Usage__
   Run the main script to start data collection and analysis:
     *python nostalgia_analysis.py*
 
-  Example Output
+  __Example Output__
     Sentiment Analysis Results: Displays sentiment scores for each post, indicating the general tone of nostalgia.
     
     Keyword Cloud and Sentiment Distribution: Generates visuals to showcase common nostalgic topics and their associated         sentiments.
  
-
-5. Dependencies
+5. __Dependencies__
   pandas, tweepy, praw, requests, google-api-python-client, textblob, wordcloud, matplotlib
 
 These dependencies can be installed via *pip install -r requirements.txt.*
