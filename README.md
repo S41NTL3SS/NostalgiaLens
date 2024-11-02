@@ -11,7 +11,7 @@ __Features__
     - Insightful Visuals: Provides sentiment distribution charts and keyword visualizations for easy trend analysis.
 
 
-##Setup Instructions
+(Setup Instructions)
 
 1.__Clone the Repository__
 
@@ -33,10 +33,10 @@ __Features__
 5. __Setup API KEYS__
   To run NostalgiaLens, you’ll need to obtain API keys for each platform. Follow these steps for each:
 
-        __Twitter__ Set up a developer account and create a project to get your TWITTER_BEARER_TOKEN.
-        __Reddit__ Register an app to obtain REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, and REDDIT_USER_AGENT.
-        __Facebook__ Create an app in the Facebook Developer Console to get your FACEBOOK_ACCESS_TOKEN.
-        __YouTube__ Get a YOUTUBE_API_KEY from the Google Cloud Console.
+        Twitter: Set up a developer account and create a project to get your TWITTER_BEARER_TOKEN.
+        Reddit: Register an app to obtain REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, and REDDIT_USER_AGENT.
+        Facebook: Create an app in the Facebook Developer Console to get your FACEBOOK_ACCESS_TOKEN.
+        YouTube: Get a YOUTUBE_API_KEY from the Google Cloud Console.
 
    
 Add these keys in the script where indicated, or set them as environment variables. For security, never share your API keys publicly.
