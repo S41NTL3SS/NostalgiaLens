@@ -37,11 +37,10 @@ __Features__
         Reddit: Register an app to obtain REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, and REDDIT_USER_AGENT.
         Facebook: Create an app in the Facebook Developer Console to get your FACEBOOK_ACCESS_TOKEN.
         YouTube: Get a YOUTUBE_API_KEY from the Google Cloud Console.
-
+                    For security, never share your API keys publicly.
    
 Add these keys in the script where indicated, or set them as environment variables. For security, never share your API keys publicly.
 
-For security, never share your API keys publicly.
 
 4.__Usage__
   Run the main script to start data collection and analysis:
