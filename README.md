@@ -13,7 +13,7 @@ __Features__
 ##Setup Instructions
 
 ###1. __Clone the Repository__
-  '''vash
+  '''bash
    *git clone https://github.com/your-username/NostalgiaLens.git*
 
    __Navigate into the project folder__
