@@ -1,7 +1,7 @@
 __NostalgiaLens__ is a Python tool designed to capture and analyze nostalgic trends across generations by collecting data from social media platforms like Twitter, Reddit, Facebook, and YouTube. This tool provides insights into the themes, eras, and cultural elements that resonate with each generation, making it valuable for researchers, marketers, and content creators.
 
 __Features__
-'''plaintext
+'''text
   - Cross-Platform Analysis: Gathers nostalgic data from Twitter, Reddit, Facebook, and YouTube.
 
   - Sentiment Analysis: Uses sentiment scores to categorize nostalgic sentiments as positive, neutral, or negative.
@@ -14,7 +14,8 @@ __Features__
 ##Setup Instructions
 
 1.__Clone the Repository__
-'''plaintext
+
+'''text
 git clone https://github.com/your-username/NostalgiaLens.git
 '''
 
