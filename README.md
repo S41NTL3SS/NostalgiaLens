@@ -48,9 +48,10 @@ __Features__
 
 
   __Example Output__
-  *Sentiment Analysis Results* Displays sentiment scores for each post, indicating the general tone of nostalgia.
+  
+        *Sentiment Analysis Results* Displays sentiment scores for each post, indicating the general tone of nostalgia.
     
-  *Keyword Cloud and Sentiment Distribution* Generates visuals to showcase common nostalgic topics and their associated         sentiments.
+        *Keyword Cloud and Sentiment Distribution* Generates visuals to showcase common nostalgic topics and their associated sentiments.
  
 5. __Dependencies__
    
@@ -61,6 +62,7 @@ __Features__
     pip install -r requirements.txt.
 
 
-License
+*License*
+
 This project is licensed under the MIT License.
 
