@@ -40,9 +40,6 @@ __Features__
    
 *For security, never share your API keys publicly.*
 
-   
-Add these keys in the script where indicated, or set them as environment variables. For security, never share your API keys publicly.
-
 
 4.__Usage__
   Run the main script to start data collection and analysis:
