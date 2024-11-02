@@ -15,7 +15,7 @@ __Features__
 1. __Clone the Repository__
    *git clone https://github.com/your-username/NostalgiaLens.git*
 
-  1.2 __Navigate into the project folder__
+   __Navigate into the project folder__
     *cd NostalgiaLens*
 
 3. __Install the required libraries by running__
