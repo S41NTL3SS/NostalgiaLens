@@ -1,45 +1,60 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+import tweepy
+from textblob import TextBlob
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
-# C extensions
-*.so
+# Authentication details (you need your own API keys for this)
+consumer_key = 'your_consumer_key'
+consumer_secret = 'your_consumer_secret'
+access_token = 'your_access_token'
+access_token_secret = 'your_access_token_secret'
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-.eggs/
-sdist/
-wheels/
+# Authenticating with the Twitter API
+auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
+api = tweepy.API(auth)
 
-# PyInstaller
-*.manifest
-*.spec
+# Define a function to collect tweets based on a search term
+def get_tweets(query, count=100):
+    tweets = api.search_tweets(q=query, count=count, lang='en', tweet_mode='extended')
+    return tweets
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# Define a function to analyze sentiment of tweets using TextBlob
+def analyze_sentiment(tweets):
+    positive, neutral, negative = 0, 0, 0
+    for tweet in tweets:
+        analysis = TextBlob(tweet.full_text)
+        polarity = analysis.sentiment.polarity
+        if polarity > 0:
+            positive += 1
+        elif polarity < 0:
+            negative += 1
+        else:
+            neutral += 1
+    return positive, neutral, negative
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.pytest_cache/
-.cache
+# Define a function to generate a word cloud from tweet text
+def generate_wordcloud(tweets):
+    text = ' '.join([tweet.full_text for tweet in tweets])
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.show()
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
+# Main script
+def main():
+    query = input("Enter a search term for tweets: ")
+    tweets = get_tweets(query)
+    print(f"Analyzed {len(tweets)} tweets about '{query}'")
+    
+    # Sentiment analysis
+    positive, neutral, negative = analyze_sentiment(tweets)
+    print(f"Positive tweets: {positive}")
+    print(f"Neutral tweets: {neutral}")
+    print(f"Negative tweets: {negative}")
+    
+    # Generate word cloud
+    generate_wordcloud(tweets)
 
-# Virtual Environments
-.venv/
-venv/
-
-# Mac OS files
-.DS_Store
-
-# Output files (optional)
-output/
-*.csv
-*.png
+# Run the script
+if __name__ == '__main__':
+    main()
